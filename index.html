@@ -4,15 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>Quote Generator</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" type="text/css">
 </head>
 <body>
     
-    <h1>Hello I'm BMPS Js-Developer</h1>
+    <div class="quote-container" id="quote-container">
 
-    <i class="fa-brands fa-facebook"></i>
+        <!-- quote -->
+        <div class="quote-text">
+            <i class="fa-solid fa-quote-left"></i>
+            <span id="quote">
+                Lorem ipsum dolor sit amet consectetur. Molestiae, asperiores quae accusamus mollitia quisquam maxime.
+            </span>
+        </div>
+
+        <!-- Author -->
+        <div class="quote-author">
+            <div id="author">
+                BMPS Eduction Center
+            </div>
+        </div>
+
+        <!-- button -->
+        <div class="button-container">
+            <button class="twitter-button" id="twitter"> 
+                <i class="fa-brands fa-twitter"></i>
+            </button>
+            <button id="new-quote">New Quote</button>
+        </div>
+    </div>
+
+    <div class="loader" id="loader"></div>
 
     <script src="./script.js"></script>
 
